@@ -1,0 +1,239 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica";
+}
+nav {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+}
+
+nav>a {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0 2rem;
+    color: black;
+}
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#body2{
+    background-color: #50515e;
+}
+
+header {
+    border-bottom: 0.5rem solid black;
+    line-height: 1;
+    padding: 1rem 2rem;
+}
+h1 {
+    font-size: 3rem;
+    line-height: inherit;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: inherit;
+    color: #999;
+}
+.form-group{
+  color: #999;
+  font-size: 20px;
+}
+#textarea2 {
+  background-color: #949599;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #black;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 500px;
+  height: 200px;
+  transition: all 0.2s;
+  position:absolute; left:700px; top:200px; 
+}
+
+#textarea2:hover {
+  cursor: pointer;
+  background-color: #9d9da4
+  color: black;
+  border:1px solid red;
+  box-shadow: 1px 1px 1px #ff00a2;
+}
+
+#textarea2:focus {
+  outline: none !important;
+  cursor: text;
+  color: #949599
+  background-color: black;
+  border:1px solid red;
+  box-shadow: 1px 1px 1px #ff00a2;
+  background: #adadad;
+}
+
+#submitbutton {
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #999;
+  border: solid 1px transparent;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  position:absolute; left:700px; top:420px; 
+}
+
+#submitbutton:hover {
+  border:1px solid red;
+  box-shadow: 0 0 10px #ff00a2;
+}
+
+#submitbutton:active {
+  border:1px solid red;
+  box-shadow: 0 0 10px #ff00a2;
+}
+
+label {
+  position:absolute; left:700px; top:170px; 
+}
+
+.DisplayNoteTextArea {
+  background-color: #949599;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #black;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 500px;
+  height: 200px;
+  position:absolute; left:300px; top:200px; 
+  resize: none ;
+  cursor: auto;
+  outline: none;
+}
+
+.DisplayNoteTextArea:hover {
+  cursor: auto;
+  background-color: #9d9da4
+  color: black;
+
+}
+
+.DisplayNoteTextArea.edit-mode {
+  cursor: text;
+}
+
+.DeleteButton {
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #949599;
+  color: #000000;
+  border: solid 1px transparent;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px; 
+  text-align: center;
+}
+.DeleteButton:hover {
+  border:1px solid red;
+  box-shadow: 1px 1px 1px #ff00a2;
+}
+
+.DeleteButton span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+}
+
+.EditButton {
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #949599;
+  color: #000000;
+  border: solid 1px transparent;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px; 
+  text-align: center;
+}
+.EditButton:hover {
+  border:1px solid red;
+  box-shadow: 1px 1px 1px #ff00a2;
+}
+
+.EditButton span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+  transition: opacity 0.2s;
+}
+.EditButton.edit-mode {
+  background-color: #428bca; 
+  color: white; 
+}
+
+.EditButton.edit-mode span {
+  opacity: 0; 
+}
+
+.EditButton.edit-mode:hover {
+  background-color: #357ebd; 
+}
+
+.EditButton.edit-mode.active span {
+  opacity: 1; 
+}
+
+.EditButton.edit-mode:hover span {
+  opacity: 0; 
+}
+
+.EditButton.edit-mode:hover.active span {
+  opacity: 1; 
+  animation: fadeInOut 0.2s; 
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.edit-mode-textarea {
+  border: none; 
+  background-color: #f0f0f0;
+  transition: background-color 0.2s; 
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.edit-mode-textarea:hover {
+  background-color: #d4d4d4; 
+}
+
+#result{
+  color:white;
+}
